@@ -40,6 +40,7 @@ app.use("/api/category",require("./routes/categoryRoutes.js"))
 
 app.get("*", (req, res) => {
     let url = path.join(__dirname, '/public/', 'index.html');
+    let b = 0;
     res.sendFile(url);
   });
 
